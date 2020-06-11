@@ -163,8 +163,8 @@ class AffixSocket(AffixSocketWrapper):
   def close(self):
     return self._affix_object.socket_close(self._socket)
 
-  def recv(self, bytes):
-    return self._affix_object.socket_recv(self._socket, bytes)
+  def recv(self, some_bytes):
+    return self._affix_object.socket_recv(self._socket, some_bytes)
 
   def send(self, message):
     return self._affix_object.socket_send(self._socket, message)

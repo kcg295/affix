@@ -42,8 +42,8 @@ class RepyNetworkAPIWrapper(base_affix.BaseAffix):
     return socket.send(msg)
 
 
-  def socket_recv(self, socket, bytes):
-    return socket.recv(bytes)
+  def socket_recv(self, socket, some_bytes):
+    return socket.recv(some_bytes)
 
 
   def tcpserversocket_getconnection(self, tcpserversocket):
